@@ -8,7 +8,9 @@ package main
 //a single print statement
 //multiple print statements
 
-import ( "fmt" )
+import (
+	"fmt"
+)
 
 func main() {
 	x := 42
