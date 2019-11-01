@@ -6,17 +6,17 @@ import (
 )
 
 func main() {
-	bondCharachters := map[string][]string{
+	bondCharacters := map[string][]string{
 		`bond_james`:      {`Shaken, not stirred`, `Martinis`, `Women`},
 		`moneypenny_miss`: {`James Bond`, `Literature`, `Computer Science`},
 		`no_dr`:           {`Being evil`, `Ice cream`, `Sunsets`},
 	}
 
-	bondCharachters["octopussy"] = []string{`bikini`, `surfing`, `poison`}
+	bondCharacters["octopussy"] = []string{`bikini`, `surfing`, `poison`}
 
-	delete(bondCharachters, `no_dr`)
+	delete(bondCharacters, `no_dr`)
 
-	for key, value := range bondCharachters {
+	for key, value := range bondCharacters {
 		fmt.Printf("%v:\t\n", key)
 
 		for index, v := range value {
